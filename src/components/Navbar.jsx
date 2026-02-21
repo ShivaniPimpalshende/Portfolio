@@ -41,8 +41,7 @@ export default function Navbar() {
           whileTap={{ scale: 0.9 }}
           onClick={() => scrollToSection("home")}
           className="h-9 cursor-pointer"
-          src="/assets/logo.svg"
-          alt="Logo"
+          
         />
 
         <ul className="hidden lg:flex items-center gap-x-7 font-semibold">
@@ -64,7 +63,8 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href=""
+          href="/assets/ShivaniPimpalshendeResume.pdf"
+          download="Shivani_Pimpalshende_Resume.pdf"
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
         >
           <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -112,7 +112,8 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                href=""
+                href="/assets/ShivaniPimpalshendeResume.pdf"
+                download="Shivani_Pimpalshende_Resume.pdf"
                 className="relative inline-block px-4 py-2 font-semibold group"
                 whileHover={{ scale: 1.1 }}
               >

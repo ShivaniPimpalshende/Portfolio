@@ -5,17 +5,24 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
-    description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
+    title: "Document Forgery Detection Using OCR and Deep Learning",
+    description: "Developed a system to detect tampered documents using OCR and ResNet-18, generating detailed authenticity reports. Integrated Python and Deep Learning pipelines",
     image: "/assets/project1.png",
-    link: "#"
+    link: "https://github.com/ShivaniPimpalshende/Document-Forgery-Detection-using-OCR-and-Deep-Learning.git"
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-    image: "/assets/project1.png",
-    link: "#"
+    title: "Airbnb Like Web Application",
+    description: "Developed an Airbnb feature-rich full-stack web application using Express.js and MongoDB for backend operations. Used EJS templates for dynamic web pages and middleware to handle errors.",
+    image: "/assets/project2.png",
+    link: "https://airbn-website.onrender.com/listings"
+  },
+  {
+    id: 3,
+    title: "Identifying Fake Product through Barcode Using Blockchain Technology",
+    description: "Developed a system to identify fake products using blockchain technology and barcode scanning. Implemented smart contracts and integrated with a web-based frontend for user interaction.",
+    image: "/assets/project3.png",
+    link: "https://identifying-fake-products-using-barcode.onrender.com/"
   }
 ];
 

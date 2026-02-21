@@ -1,42 +1,51 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
+import { FaJs, FaReact, FaNodeJs, FaPython, FaJava } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
+import { TbDatabase } from "react-icons/tb";
+import { FaBrain } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { GiArtificialIntelligence } from "react-icons/gi";
+import { MdPsychology } from "react-icons/md";
+import { TbLanguage } from "react-icons/tb";
+
 
 export default function Skills() {
   const [skills] = useState([
+    { id: 10, name: "RAG / AI", icon: <GiArtificialIntelligence size={50} /> },
+    { id: 11, name: "Machine Learning", icon: <MdPsychology size={50} /> },
+    {id:12, name: "Deep Learning", icon: <FaBrain size={50} /> },
+    {id:13, name: "NLP", icon: <TbLanguage size={50} /> },
     { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
     { id: 2, name: "React", icon: <FaReact size={50} /> },
     { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
     { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
+    { id: 5, name: "MongoDB", icon: <SiMongodb size={50} /> },
     { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 7, name: "SQL", icon: <TbDatabase size={50} /> },
+    { id: 8, name: "Express.js", icon: <SiExpress size={50} /> },
+    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> }
+    
   ]);
 
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "QuickFusion Innovation",
+      role: "AI Engineer Intern",
+      period: "Dec 2025 - Present",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        "As an AI Engineer Intern at QuickFusion Innovation, I am actively involved in building production-oriented AI systems. My responsibilities include designing and implementing machine learning models, optimizing algorithms for performance, and collaborating with cross-functional teams to integrate AI solutions into real-world applications. I am gaining hands-on experience in deploying AI models and ensuring their scalability and reliability in a production environment.",
+      logo: "/assets/companylogo.svg",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "InternPe",
+      role: "Web Developer Intern",
+      period: "April 2025 - May 2025",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "At InternPe, I served as a Web Developer Intern, focusing on the design and implementation of frontend and backend systems for the company's dynamic platform. Working on projects that involved responsive design and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+      logo: "/assets/internpe.svg",
     },
   ]);
 
